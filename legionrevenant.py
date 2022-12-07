@@ -2,7 +2,7 @@ from pynput.keyboard import Key, Controller
 import time
 
 keyboard = Controller()
-sleepCount = 1
+sleepCount = 0.025
 
 
 def main():
