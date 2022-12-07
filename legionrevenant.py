@@ -42,12 +42,11 @@ def main():
     ConstantRunning()
 
     while True:
-        if keyboard.is_pressed('r'):
+        if keyboard.is_pressed('`'):
             print("Bot Resumed!")
             ConstantRunning()
         elif keyboard.is_pressed('q'):
             print("Bot Ended!")
-            break
 
 
 main()
