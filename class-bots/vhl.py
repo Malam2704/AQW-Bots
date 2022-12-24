@@ -7,26 +7,18 @@ import keyboard
 pynputKeyBoard = Controller()
 sleepCount = 0.025
 
+# combo as a string here:
+comboString = "543343"
+
 
 def ComboSet():
     # The combo for each class, change for
     # other classes
 
-    time.sleep(sleepCount)
-    pynputKeyBoard.press("4")
-    pynputKeyBoard.release("4")
-
-    time.sleep(sleepCount)
-    pynputKeyBoard.press("5")
-    pynputKeyBoard.release("5")
-
-    time.sleep(sleepCount)
-    pynputKeyBoard.press("2")
-    pynputKeyBoard.release("2")
-
-    time.sleep(sleepCount)
-    pynputKeyBoard.press("3")
-    pynputKeyBoard.release("3")
+    for i in comboString:
+        time.sleep(sleepCount)
+        pynputKeyBoard.press(i)
+        pynputKeyBoard.release(i)
 
 
 def ConstantRunning():
